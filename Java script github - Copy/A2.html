@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marks Calculation</title>
+</head>
+<body>
+    <script>
+        function getMarks() {
+            var total = 0;
+            var average = 0; 
+            for (var i = 0; i < 5; i++) {
+                var marks = parseInt(window.prompt("Enter marks")); 
+                total += marks; 
+            }
+
+            average = total / 5; 
+
+            alert("Total: " + total + "\nAverage: " + average);
+
+            
+            var gradeButton = document.createElement("button");
+            gradeButton.innerHTML = "GRADE";
+            gradeButton.onclick = function () {
+                buttonClick(average); 
+            };
+            document.body.appendChild(gradeButton);
+        }
+
+        function buttonClick(average) {
+            if (average > 30) {
+                alert("Congrats! You Passed");
+            } else {
+                alert("Better luck next time");
+            }
+        }
+    </script>
+    <script>
+        window.onload = function () {
+            getMarks();
+        }
+    </script>
+</body>
+</html>
