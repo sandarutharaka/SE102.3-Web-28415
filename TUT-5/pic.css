@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+}
+.box{
+    height:100vh;
+    background-image: url("p.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box h1{
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%);
+}
+.Inner_box{
+    max-width: 650px;
+    position: relative;
+    display: block;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(255,255,255,.2);
+    padding: 30px;
+
+}
+.Inner_box p{
+    font-size: 60px;
+    color: white;
+}
