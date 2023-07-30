@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function x()
+        {
+            document.bgColor="red";
+            document.fgColor="Green";
+            
+        }
+
+        function y()
+        {
+            document.bgColor="Green";
+            document.fgColor="red";
+          
+        }
+
+        function z()
+        {
+            document.bgColor="blue";
+            document.bgColor="red";
+           
+        }
+        function reset()
+        {
+            document.bgColor="white";
+            document.fgColor="black";
+
+        }
+
+    
+
+    </script>
+</head>
+<body>
+    <input type="button" name="d" value="red" onmouseover="x()" onmouseout="reset()">
+    <input type="button" name="d1" value="Green" onmouseover="y()" onmouseout="reset()">
+    <input type="button" name="d2" value="blue" onmouseover="z()" onmouseout="reset()">
+    
+</body>
+</html>
