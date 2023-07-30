@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onClick="buttonClick()">Google</button>
+    <script>
+        function buttonClick(){
+            var x=window.confirm("Do you want to visit Google?")
+            if(x){
+                window.location.href="https://www.google.com";
+            }
+            else{
+                window.alert("You decided to stay")
+            }
+           
+        }
+    </script>
+</body>
+</html>
